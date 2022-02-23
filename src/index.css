@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  margin: 0;
+  height: 100vh;
+  background-color: #282d35;
+}
+::selection {
+  color: #61dafb;
+  background: rgb(5, 5, 5);
+}
+
+:root {
+  --background: white;
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+}
+[data-theme="dark"] {
+  --background: black;
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+/* .container {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px dotted #000;
+} */
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px 25px;
+  height: 90px;
+  box-shadow: 0px 3px 5px #eee;
+  z-index: 1;
+  position: relative;
+}
+nav.dark {
+  background-color: #21222a;
+  box-shadow: 0px 3px 5px #333;
+}
+
+img {
+  height: 50px;
+  margin-right: 2px;
+}
+nav > h3 {
+  margin: 0;
+}
+nav > h3 {
+  color: #61dafb;
+  font-size: 22px;
+  margin-right: auto;
+}
+nav > a {
+  color: #000;
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: italic;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-right: 10px;
+}
+nav.dark > a {
+  color: #deebf8;
+}
+nav > a:hover {
+  color: #61dafb;
+}
+/* Toggler */
+nav .toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .toggler--light {
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+}
+nav.dark .toggler--light {
+  color: #918e9b;
+}
+
+nav .toggler--dark {
+  color: #918e9b;
+  font-size: 12px;
+}
+nav.dark .toggler--dark {
+  color: #fff;
+  font-weight: bold;
+}
+nav .toggler--slider {
+  background-color: #2b283a;
+  height: 14px;
+  width: 25px;
+  margin: 0 5px;
+  border-radius: 12px;
+  position: relative;
+}
+nav.dark .toggler--slider {
+  background-color: #fff;
+}
+nav .toggler--slider--circle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 11px;
+}
+nav.dark .toggler--slider--circle {
+  background-color: #2b283a;
+  right: 2px;
+}
+/* ---------main--------- */
+main {
+  padding: 60px 30px;
+  color: #000;
+  height: 100vh;
+  background-color: #fff;
+
+  background-image: url(./images/assassins-creed-light.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 70%;
+}
+main.dark {
+  background-color: #282d35;
+  color: #f5faff;
+  background-image: url(./images/assassins-creed-x.png);
+}
+@media (min-width: 767px) {
+  main {
+    background-position: 90% 70%;
+  }
+}
+.title {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: 2px;
+  line-height: 50px;
+  font-style: oblique;
+}
+.info {
+  margin-top: 50px;
+}
+.info > li {
+  line-height: 20px;
+  padding-block: 10px;
+  max-width: 500px;
+}
+.university {
+  display: block;
+  color: #777;
+}
+main.dark .university {
+  /* color: #c4c6c7; */
+  color: #aaa;
+}
+.info > li::marker {
+  color: #61dafb;
+  font-size: 1.4rem;
+}
+.my-skills {
+  display: flex;
+}
+.my-skills h4 {
+  color: #61dafb;
+  margin-bottom: 10px;
+}
+.skills {
+  width: fit-content;
+}
+
+.skills > li {
+  padding: 5px 10px;
+  margin-bottom: 6px;
+  list-style: none;
+  text-align: center;
+  border: 1px solid #444;
+  transition: 0.5s;
+}
+.skills > li:hover {
+  background-color: #61dafb;
+  color: #000;
+  font-weight: bold;
+}
+/* Footer */
+footer {
+  background-color: #eee;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -3px 5px #ddd;
+}
+footer.dark {
+  background-color: #21222a;
+  position: relative;
+  box-shadow: 0px -3px 5px #333;
+}
+.icon {
+  color: #777;
+  font-size: 30px;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+.icon:hover {
+  color: #61dafb;
+}
