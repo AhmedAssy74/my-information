@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/my-information/static/css/main.825850be.css",
+    "main.js": "/my-information/static/js/main.7bcb995a.js",
+    "static/media/assassins-creed.png": "/my-information/static/media/assassins-creed.3154d41478992ddb6382.png",
+    "static/media/assassins-creed-x.png": "/my-information/static/media/assassins-creed-x.b7e5888781c3cddccb60.png",
+    "static/media/assassins-creed-light.png": "/my-information/static/media/assassins-creed-light.81a27ec7635586acbcf7.png",
+    "index.html": "/my-information/index.html",
+    "main.825850be.css.map": "/my-information/static/css/main.825850be.css.map",
+    "main.7bcb995a.js.map": "/my-information/static/js/main.7bcb995a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.825850be.css",
+    "static/js/main.7bcb995a.js"
+  ]
+}
